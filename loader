@@ -2,9 +2,9 @@ local scripts = {
     [10187294555] = "Mine a Mountain"
 }
 
-local game = scripts[game.GameId]
-if game then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/"..game..".lua))()
+local game_script = scripts[game.GameId]
+if game_script then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/"..game_script..".lua))()
     
 else
     game:GetService("StarterGui"):SetCore("SendNotification", {
