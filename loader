@@ -1,9 +1,9 @@
-local s = { 
-    [10187294555] = "Mine-a-Mountain" 
-} 
-local game_script = s[game.GameId] 
+local s = {
+    [10187294555] = "Mine a Mountain"
+}
+local game_script = s[game.GameId]
 
-if game_script then 
+if game_script then
     StarterGui:SetCore("SendNotification", {
     Title = "FREEHUB",
     Text = "Script loading...",
@@ -15,9 +15,9 @@ if game_script then
 else game:GetService("StarterGui"):SetCore("SendNotification",
 
 { Title = "FREEHUB",
-    Text = "This game is not supported", 
-    Duration = 5 
-})  
+    Text = "This game is not supported",
+    Duration = 5
+})
 
     game:GetService"Players".LocalPlayer:Kick("This game is not supported")
     
