@@ -1,5 +1,5 @@
 local script = {
-    [10187294555]
+    [10187294555],
 }
 
 local game_script = script[game.GameId]
