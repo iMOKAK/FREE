@@ -1,1 +1,3 @@
-
+getgenv().Games = {
+    [125927821145949] = "https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/Mine%20a%20Mountain",
+}
