@@ -1,1 +1,17 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/gamelist"))()
+local gameFound = false
+for PlaceID, Execute in pairs(Games) do
+    if PlaceID == game.PlaceId then
+        gameFound = true
+        loadstring(game:HttpGet(Execute))()
+        break
+    end
+end
 
+if not gameFound then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "We’re sorry, but this game is not supported. Please check our Discord for a list of supported games",
+        Text = "T_T",
+        Duration = 10
+    })
+end
