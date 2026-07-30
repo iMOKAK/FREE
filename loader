@@ -1,15 +1,24 @@
 local s = { 
-    [10187294555] = "MAM" 
+    [10187294555] = "Mine-a-Mountain" 
 } 
 local game_script = s[game.GameId] 
+
 if game_script then 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/" ..game_script.lua"))() 
+    StarterGui:SetCore("SendNotification", {
+    Title = "FREEHUB",
+    Text = "Script loading...",
+    Duration = 5,
+})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/" .. game_script.lua"
+    ))()
+
 else game:GetService("StarterGui"):SetCore("SendNotification",
-{ Title = "We’re sorry, but this game is not supported. Please check our Discord for a list of supported games",
- Text = "Sorry T_T", 
- Duration = 5 
-}) 
-wait(5) 
-game:GetService"Players".LocalPlayer:Kick("This game is not supported")
+
+{ Title = "FREEHUB",
+    Text = "This game is not supported", 
+    Duration = 5 
+})  
+
+    game:GetService"Players".LocalPlayer:Kick("This game is not supported")
     
 end
