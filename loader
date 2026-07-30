@@ -1,36 +1,15 @@
-if not game:IsLoaded() then
-    game.Loaded:Wait()
+local s = { 
+    [10187294555] = "MAM" 
+} 
+local game_script = s[game.GameId] 
+if game_script then 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/" ..game_script.lua"))() 
+else game:GetService("StarterGui"):SetCore("SendNotification",
+{ Title = "We’re sorry, but this game is not supported. Please check our Discord for a list of supported games",
+ Text = "Sorry T_T", 
+ Duration = 5 
+}) 
+wait(5) 
+game:GetService"Players".LocalPlayer:Kick("This game is not supported")
+    
 end
-
-if getgenv().FREE then return end
-getgenv().FREE = true
-
-local StarterGui = game:GetService("StarterGui")
-
-local scripts = {
-
-}
-
-local file = scripts[game.CreatorId]
-
-if not file then
-    getgenv().FREE = nil
-
-    StarterGui:SetCore("SendNotification", {
-        Title = "FREEHUB",
-        Text = "Game not supported",
-        Duration = 5,
-    })
-
-    return
-end
-
-StarterGui:SetCore("SendNotification", {
-    Title = "FREEHUB",
-    Text = "Script loading...",
-    Duration = 5,
-})
-
-loadstring(game:HttpGet(
-    "https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/" .. file
-))()
