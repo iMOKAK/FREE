@@ -4,8 +4,7 @@ local scripts={
 
 local game_script=scripts[game.GameId]
 if game_script then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/gamelist"))()
-    loadstring(game:HttpGet("https://you.whimper.xyz/sources/DengHub/"..game_script..".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/"..game_script.."))()
 else
     game:GetService"Players".LocalPlayer:Kick("This game is not supported by DengHub.")
 end
