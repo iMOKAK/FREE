@@ -1,5 +1,5 @@
 local scripts = {
-    [101872945555] = "Mine a Mountain"
+    [10187294555] = "Mine a Mountain"
 }
 
 local game_script = scripts[game.GameId]
