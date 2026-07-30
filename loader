@@ -1,8 +1,8 @@
-local script = {
+local s = {
     [10187294555] = "MAM"
 }
 
-local game_script = script[game.GameId]
+local game_script = s[game.GameId]
 if game_script then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/"...game_script...".lua"))()
     
