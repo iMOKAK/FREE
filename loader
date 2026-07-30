@@ -1,11 +1,5 @@
 local scripts={
-    [7250663454]="Anime_Spirits_Journey",
-    [6603439471]="anime_shadow3",
-    [5750914919]="Fisch",
-    [6543531482]="Road_Rage_Simulator",
-    [4858475432]="Avatar_Fighting_Simulator",
-    [7074860883]="Arise_Crossover",
-    [5931217122]="Anime_Kingdom_Simulator",
+    [125927821145949]="Mine a Mountain",
 }
 
 local game_script=scripts[game.GameId]
