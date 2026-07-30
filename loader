@@ -4,7 +4,7 @@ local scripts = {
 
 local game = scripts[game.GameId]
 if game then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/"..game_script..".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iMOKAK/FREE/refs/heads/main/"..game..".lua"))()
     
 else
     game:GetService"Players".LocalPlayer:Kick("This game is not supported")
